@@ -8,6 +8,23 @@ let menu_btn = document.querySelector(".menu_btn");
 let link_con = document.querySelector(".navigators");
 let close_btn = document.querySelector(".remove_icon");
 let anchors = document.querySelectorAll(".navigators .links a");
+let all_data = [];
+
+// SWIPER JS
+var swiper = new Swiper(".img_wrapper", {
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+    speed: 100,
+  },
+  effect: "fade",
+
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+});
 
 //NAVIGATION BTN
 menu_btn.onclick = () => {

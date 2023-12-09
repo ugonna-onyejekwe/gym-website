@@ -1,662 +1,694 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gymnasia</title>
-    <!-- custom css link -->
-    <link rel="stylesheet" href="index.css" />
-    <!-- icon link -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
 
-  </head>
-  <body>
-    <!-- nav section starts -->
-    <nav>
-      <div class="nav_container container">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gymnasia</title>
+  <!-- custom css link -->
+  <link rel="stylesheet" href="index.css" />
+  <!-- icon link -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- swiper link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+  <!-- nav section starts -->
+  <nav>
+    <div class="nav_container container">
+      <div class="logo">
+        <h1>gym <span>nasia</span></h1>
+      </div>
+      <div class="navigators">
+        <div class="links">
+          <a href="#home" class="active">home</a>
+          <a href="#about_us">about us</a>
+          <a href="#course">courses</a>
+          <a href="#trainers">our trainers</a>
+          <a href="#contact">contact</a>
+        </div>
+        <div class="btn">
+          <button class="sign_in_btn">sign in</button>
+        </div>
+      </div>
+      <div class="menu_btn">
+        <i class='bx bx-menu-alt-right'></i>
+        <i class='bx bx-x'></i>
+      </div>
+    </div>
+  </nav>
+  <!-- nav section ends-->
+
+  <!-- home section starts -->
+  <section id="home">
+    <div class="home_container">
+
+      <div class="swiper img_wrapper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/home2.jpg" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="img/home1.jpg" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="img/spining.jpg" />
+          </div>
+
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="txt">
+        <span class="head"> welcome to gymnasia </span>
+        <h1>let's build your <span>physique</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+          quaerat aut nam minus debitis obcaecati corrupti nemo ratione
+          perferendis accusantium voluptatem dolores nesciunt error, sit
+          commodi! Similique ratione cupiditate ea.
+        </p>
+        <button>get started</button>
+      </div>
+    </div>
+  </section>
+  <!-- home section ends -->
+
+  <!-- about us section starts -->
+  <section id="about_us">
+    <div class="about_container container">
+      <div class="img">
+        <img src="img/about.jpg" />
+      </div>
+
+      <div class="txt">
+        <span>about us</span>
+        <h2>every day is a chance to become better.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id eum
+          laudantium laborum neque facilis accusamus deserunt magni, veniam
+          laboriosam fuga reprehenderit eveniet hic, ab soluta, molestiae
+          recusandae inventore amet ad?
+        </p>
+        <div class="cols">
+          <!-- bx 1 -->
+          <div class="bx">
+            <h4><i class="bx bx-check"></i> body and mind</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id eum
+              laudantium laborum.
+            </p>
+          </div>
+
+          <!-- bx 2 -->
+          <div class="bx">
+            <h4><i class="bx bx-check"></i> healthy life</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id eum
+              laudantium laborum.
+            </p>
+          </div>
+
+          <!-- bx 3 -->
+          <div class="bx">
+            <h4><i class="bx bx-check"></i> strategies</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id eum
+              laudantium laborum.
+            </p>
+          </div>
+
+          <!-- bx 4 -->
+          <div class="bx">
+            <h4><i class="bx bx-check"></i> workout</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id eum
+              laudantium laborum.
+            </p>
+          </div>
+        </div>
+        <div class="btn">
+          <button>read more</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about us section ends -->
+
+  <!-- course section starts -->
+  <section id="course">
+    <div class="courses_container container">
+      <h2>our <span>courses</span></h2>
+      <p class="subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci cum
+        asperiores, quidem sunt sequi deleniti.
+      </p>
+      <div class="wrapper">
+        <!-- bx1 -->
+        <div class="bx">
+          <div class="img">
+            <img src="img/weight-lifting.jpg" alt="img" />
+          </div>
+          <div class="txt">
+            <h5>weight liftying</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+              non mollitia optio ratione aut labore nobis quam dolore
+              quibusdam eaque officiis neque.
+            </p>
+            <button>explore course</button>
+          </div>
+        </div>
+
+        <!-- bx2 -->
+        <div class="bx">
+          <div class="img">
+            <img src="img/body-comp.jpg" alt="img" />
+          </div>
+          <div class="txt">
+            <h5>body composition</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+              non mollitia optio ratione aut labore nobis quam dolore
+              quibusdam eaque officiis neque.
+            </p>
+            <button>explore course</button>
+
+          </div>
+        </div>
+
+        <!-- bx3 -->
+        <div class="bx">
+          <div class="img">
+            <img src="img/p-training.jpg" alt="img" />
+          </div>
+          <div class="txt">
+            <h5>personal training</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+              non mollitia optio ratione aut labore nobis quam dolore
+              quibusdam eaque officiis neque.
+            </p>
+            <button>explore course</button>
+
+          </div>
+        </div>
+
+        <!-- bx4 -->
+        <div class="bx">
+          <div class="img">
+            <img src="img/yoga.jpg" alt="img" />
+          </div>
+          <div class="txt">
+            <h5>yoga</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+              non mollitia optio ratione aut labore nobis quam dolore
+              quibusdam eaque officiis neque.
+            </p>
+            <button>explore course</button>
+
+          </div>
+        </div>
+
+        <!-- bx5 -->
+        <div class="bx">
+          <div class="img">
+            <img src="img/spining.jpg" alt="img" />
+          </div>
+          <div class="txt">
+            <h5>spin cycling</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+              non mollitia optio ratione aut labore nobis quam dolore
+              quibusdam eaque officiis neque.
+            </p>
+            <button>explore course</button>
+
+          </div>
+        </div>
+
+        <!-- bx6 -->
+        <div class="bx">
+          <div class="img">
+            <img src="img/cycling.jpg" alt="img" />
+          </div>
+          <div class="txt">
+            <h5>cycling</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+              non mollitia optio ratione aut labore nobis quam dolore
+              quibusdam eaque officiis neque.
+            </p>
+            <button>explore course</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- course section ends -->
+
+  <!-- trainers section starts -->
+  <section id="trainers">
+    <div class="trainers_container container">
+      <h2>our <span>trainers</span></h2>
+      <p class="subtitle">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
+        nihil possimus hic sunt, porro eveniet. Et, culpa officiis.
+      </p>
+
+      <div class="wrapper">
+        <!-- bx1 -->
+        <div class="bx">
+          <div class="img">
+            <img src="img/trainer1.jpg" alt="img" />
+          </div>
+          <div class="txt">
+            <h5>james thomas</h5>
+            <p>nutritionist</p>
+            <div class="social">
+              <i class="bx bxl-facebook"></i>
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- bx2 -->
+        <div class="bx">
+          <div class="img">
+            <img src="img/trainer2.jpg" alt="img" />
+          </div>
+          <div class="txt">
+            <h5>john christopher</h5>
+            <p>massage  therapist</p>
+            <div class="social">
+              <i class="bx bxl-facebook"></i>
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- bx3 -->
+        <div class="bx">
+          <div class="img">
+            <img src="img/trainer3.jpg" alt="img" />
+          </div>
+          <div class="txt">
+            <h5>robert daniel</h5>
+            <p>strength and conditioning coach</p>
+            <div class="social">
+              <i class="bx bxl-facebook"></i>
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- bx4 -->
+        <div class="bx">
+          <div class="img">
+            <img src="img/trainer4.jpg" alt="img" />
+          </div>
+          <div class="txt">
+            <h5>michael paul</h5>
+            <p>group fitness coach</p>
+            <div class="social">
+              <i class="bx bxl-facebook"></i>
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- bx5 -->
+        <div class="bx">
+          <div class="img">
+            <img src="img/trainer5.jpg" alt="img" />
+          </div>
+          <div class="txt">
+            <h5>williams mark</h5>
+            <p>yoga instructor</p>
+            <div class="social">
+              <i class="bx bxl-facebook"></i>
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- bx6 -->
+        <div class="bx">
+          <div class="img">
+            <img src="img/trainer6.jpg" alt="img" />
+          </div>
+          <div class="txt">
+            <h5>david donald</h5>
+            <p>aquatics instructor</p>
+            <div class="social">
+              <i class="bx bxl-facebook"></i>
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- trainers section ends -->
+
+  <!-- plans section starts -->
+  <section id="plans">
+    <div class="plan_container container">
+      <h2>our <span>plans</span></h2>
+      <p class="subtitle">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repellat
+        alias adipisci, praesentium excepturi harum laudantium ducimus ipsa
+        molestiae repellendus. Iure facilis tenetur.
+      </p>
+      <div class="wrapper">
+        <!-- card1 -->
+        <div class="card">
+          <h4>$8/<span>month</span></h4>
+          <h5>basic plan</h5>
+          <p>cardic exercise</p>
+          <p>wieght lifting</p>
+          <p>diet plan</p>
+          <p>overall result</p>
+        </div>
+        <!-- card2 -->
+        <div class="card">
+          <h4>$15/<span>month</span></h4>
+          <h5>pro plan</h5>
+          <p>personal training</p>
+          <p>access to all course</p>
+          <p>cardic exercise</p>
+          <p>health check</p>
+          <p>diet plan</p>
+          <p>overall result</p>
+        </div>
+
+        <!-- card2 -->
+        <div class="card">
+          <h4>$10/<span>month</span></h4>
+          <h5>premium plan</h5>
+          <p>personal training</p>
+          <p>cardic exercise</p>
+          <p>health check</p>
+          <p>diet plan</p>
+          <p>overall result</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- plans section ends -->
+
+  <!-- sechedule section starts-->
+  <section id="schedules">
+    <div class="schedule_container container">
+      <h2>our exclusive <span>schedules</span></h2>
+      <p class="subtitle">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+        odit quasi sint, asperiores id corporis sapiente molestias architecto.
+      </p>
+      <div class="wrapper">
+        <div class="day_navi">
+          <p class="active">monday</p>
+          <p>tuesday</p>
+          <p>wednesday</p>
+          <p>thursday</p>
+          <p>friday</p>
+          <p>sarturday</p>
+          <p>sunday</p>
+        </div>
+
+        <div class="activities">
+          <!-- box 1 -->
+          <div class="bx">
+            <div class="col">
+              <span>class name</span>
+              <p>body building</p>
+            </div>
+
+            <div class="col">
+              <span>time</span>
+              <p>8:00am - 9:00am</p>
+            </div>
+
+            <div class="col">
+              <span>trainer</span>
+              <p>max mathew</p>
+            </div>
+
+            <div class="col">
+              <button>join now</button>
+            </div>
+          </div>
+
+          <!-- box 2-->
+          <div class="bx">
+            <div class="col">
+              <span>class name</span>
+              <p>body building</p>
+            </div>
+
+            <div class="col">
+              <span>time</span>
+              <p>8:00am - 9:00am</p>
+            </div>
+
+            <div class="col">
+              <span>trainer</span>
+              <p>max mathew</p>
+            </div>
+
+            <div class="col">
+              <button>join now</button>
+            </div>
+          </div>
+
+          <!-- box 3 -->
+          <div class="bx">
+            <div class="col">
+              <span>class name</span>
+              <p>body building</p>
+            </div>
+
+            <div class="col">
+              <span>time</span>
+              <p>8:00am - 9:00am</p>
+            </div>
+
+            <div class="col">
+              <span>trainer</span>
+              <p>max mathew</p>
+            </div>
+
+            <div class="col">
+              <button>join now</button>
+            </div>
+          </div>
+
+          <!-- box 4 -->
+          <div class="bx">
+            <div class="col">
+              <span>class name</span>
+              <p>body building</p>
+            </div>
+
+            <div class="col">
+              <span>time</span>
+              <p>8:00am - 9:00am</p>
+            </div>
+
+            <div class="col">
+              <span>trainer</span>
+              <p>max mathew</p>
+            </div>
+
+            <div class="col">
+              <button>join now</button>
+            </div>
+          </div>
+
+          <!-- box 5 -->
+          <div class="bx">
+            <div class="col">
+              <span>class name</span>
+              <p>body building</p>
+            </div>
+
+            <div class="col">
+              <span>time</span>
+              <p>8:00am - 9:00am</p>
+            </div>
+
+            <div class="col">
+              <span>trainer</span>
+              <p>max mathew</p>
+            </div>
+
+            <div class="col">
+              <button>join now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- sechedule section ends-->
+
+
+  <!-- contact page starts -->
+  <section id="contact">
+    <div class="contact_container container">
+      <h2>contact <span>us</span></h2>
+      <p class="subtitle">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui totam, perferendis impedit nes.
+
+      </p>
+      <div class="wrapper">
+        <div class="txt">
+          <div class="box">
+            <h5>location</h5>
+            <P>New york city, usa.
+              </br>
+              85 briton mint street, london,ELBLG,USA</P>
+          </div>
+
+          <div class="box">
+            <h5>opening hours</h5>
+            <p>Mon to Fri: 6:00Am - 8:00pm</p>
+            <p>Sartuday and Sunday: 7:00Am - 9:00pm</p>
+          </div>
+
+          <div class="box">
+            <h5>follow us on</h5>
+            <p>
+              <i class="bx bxl-facebook"></i>
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-instagram"></i>
+              <i class='bx bxl-youtube'></i>
+            </p>
+          </div>
+
+
+        </div>
+
+        <div class="form">
+          <div class="bx">
+            <label for="name">name</label>
+            <input type="text" name="name" id="name">
+          </div>
+
+          <div class="bx">
+            <label for="email">email</label>
+            <input type="email" id="email">
+          </div>
+
+          <div class="bx">
+            <label for="phone_number">phone number</label>
+            <input type="number" id="phone_number">
+          </div>
+
+          <div class="bx">
+            <label for="message">message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          </div>
+          <button>send</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact page ends -->
+
+  <!-- footer page starts -->
+  <footer>
+    <div class="footer_container container">
+      <div class="box">
         <div class="logo">
           <h1>gym <span>nasia</span></h1>
         </div>
-        <div class="navigators">
-          <div class="links">
-            <a href="#home" class="active">home</a>
-            <a href="#about_us">about us</a>
-            <a href="#course">courses</a>
-            <a href="#trainers">our trainers</a>
-            <a href="#plans">plans</a>
-            <a href="#schedules">schedules</a>
-            <a href="#contact">contact</a>
-          </div>
-          <div class="btn">
-            <button class="sign_in_btn">sign in</button>
-          </div>
-        </div>
-        <div class="menu_btn">
-          <i class='bx bx-menu-alt-right'></i>
-          <i class='bx bx-x'></i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis magni ipsum modi incidunt maxime ex nam
+          repellat sapiente! Nobis esse ut perspiciatis impedit, ab eum quia adipisci harum sit eligendi.</p>
+
+      </div>
+      <div class="box">
+        <h5>our classes</h5>
+        <p>weight lifting</p>
+        <p>yoga</p>
+        <p>personal training</p>
+        <p>body composition</p>
+        <p>cycling</p>
+        <p>spin cycling</p>
+      </div>
+
+      <div class="box">
+        <h5>quick links</h5>
+        <a href="#home">home</a>
+        <a href="#home">about us</a>
+        <a href="#home">courses</a>
+        <a href="#home">our trainers</a>
+        <a href="#home">plans</a>
+        <a href="#home">schedules</a>
+        <a href="#home">contact</a>
+      </div>
+
+      <div class="box">
+        <h5>newsletter</h5>
+        <p>suscribe to our news letter to get more update about us</p>
+        <div class="input">
+          <input type="text" placeholder="EMAIL">
+          <button>subscribe</button>
         </div>
       </div>
-    </nav>
-    <!-- nav section ends-->
-
-    <!-- home section starts -->
-    <section id="home">
-      <div class="home_container">
-        <div class="img_wrapper">
-          <img src="img/pexels-leon-ardho-1552242.jpg" />
-        </div>
-        <div class="txt">
-          <span class="head"> welcome to gymnasia </span>
-          <h1>let's build your <span>shape</span></h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-            quaerat aut nam minus debitis obcaecati corrupti nemo ratione
-            perferendis accusantium voluptatem dolores nesciunt error, sit
-            commodi! Similique ratione cupiditate ea.
-          </p>
-          <button>get started</button>
-        </div>
-      </div>
-    </section>
-    <!-- home section ends -->
-
-    <!-- about us section starts -->
-    <section id="about_us">
-      <div class="about_container container">
-        <div class="img">
-          <img src="img/pexels-bruno-bueno-2204196.jpg" />
-        </div>
-
-        <div class="txt">
-          <span>about us</span>
-          <h2>every day is a chance to become better.</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id eum
-            laudantium laborum neque facilis accusamus deserunt magni, veniam
-            laboriosam fuga reprehenderit eveniet hic, ab soluta, molestiae
-            recusandae inventore amet ad?
-          </p>
-          <div class="cols">
-            <!-- bx 1 -->
-            <div class="bx">
-              <h4><i class="bx bx-check"></i> body and mind</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id eum
-                laudantium laborum.
-              </p>
-            </div>
-
-            <!-- bx 2 -->
-            <div class="bx">
-              <h4><i class="bx bx-check"></i> healthy life</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id eum
-                laudantium laborum.
-              </p>
-            </div>
-
-            <!-- bx 3 -->
-            <div class="bx">
-              <h4><i class="bx bx-check"></i> strategies</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id eum
-                laudantium laborum.
-              </p>
-            </div>
-
-            <!-- bx 4 -->
-            <div class="bx">
-              <h4><i class="bx bx-check"></i> workout</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id eum
-                laudantium laborum.
-              </p>
-            </div>
-          </div>
-          <div class="btn">
-            <button>read more</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- about us section ends -->
-
-    <!-- course section starts -->
-    <section id="course">
-      <div class="courses_container container">
-        <h2>our <span>courses</span></h2>
-        <p class="subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci cum
-          asperiores, quidem sunt sequi deleniti.
-        </p>
-        <div class="wrapper">
-          <!-- bx1 -->
-          <div class="bx">
-            <div class="img">
-              <img src="img/weight-lifting.jpg" alt="img" />
-            </div>
-            <div class="txt">
-              <h5>weight liftying</h5>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
-                non mollitia optio ratione aut labore nobis quam dolore
-                quibusdam eaque officiis neque.
-              </p>
-            </div>
-          </div>
-
-          <!-- bx2 -->
-          <div class="bx">
-            <div class="img">
-              <img src="img/body-comp.jpg" alt="img" />
-            </div>
-            <div class="txt">
-              <h5>body composition</h5>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
-                non mollitia optio ratione aut labore nobis quam dolore
-                quibusdam eaque officiis neque.
-              </p>
-            </div>
-          </div>
-
-          <!-- bx3 -->
-          <div class="bx">
-            <div class="img">
-              <img src="img/p-training.jpg" alt="img" />
-            </div>
-            <div class="txt">
-              <h5>personal training</h5>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
-                non mollitia optio ratione aut labore nobis quam dolore
-                quibusdam eaque officiis neque.
-              </p>
-            </div>
-          </div>
-
-          <!-- bx4 -->
-          <div class="bx">
-            <div class="img">
-              <img src="img/yoga.jpg" alt="img" />
-            </div>
-            <div class="txt">
-              <h5>yoga</h5>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
-                non mollitia optio ratione aut labore nobis quam dolore
-                quibusdam eaque officiis neque.
-              </p>
-            </div>
-          </div>
-
-          <!-- bx5 -->
-          <div class="bx">
-            <div class="img">
-              <img src="img/spining.jpg" alt="img" />
-            </div>
-            <div class="txt">
-              <h5>spin cycling</h5>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
-                non mollitia optio ratione aut labore nobis quam dolore
-                quibusdam eaque officiis neque.
-              </p>
-            </div>
-          </div>
-
-          <!-- bx6 -->
-          <div class="bx">
-            <div class="img">
-              <img src="img/cycling.jpg" alt="img" />
-            </div>
-            <div class="txt">
-              <h5>cycling</h5>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
-                non mollitia optio ratione aut labore nobis quam dolore
-                quibusdam eaque officiis neque.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- course section ends -->
-
-    <!-- trainers section starts -->
-    <section id="trainers">
-      <div class="trainers_container container">
-        <h2>our <span>trainers</span></h2>
-        <p class="subtitle">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
-          nihil possimus hic sunt, porro eveniet. Et, culpa officiis.
-        </p>
-
-        <div class="wrapper">
-          <!-- bx1 -->
-          <div class="bx">
-            <div class="img">
-              <img src="img/trainer1.jpg" alt="img" />
-            </div>
-            <div class="txt">
-              <h5>mark vusi</h5>
-              <p>body builder</p>
-              <div class="social">
-                <i class="bx bxl-facebook"></i>
-                <i class="bx bxl-twitter"></i>
-                <i class="bx bxl-instagram"></i>
-              </div>
-            </div>
-          </div>
-
-          <!-- bx2 -->
-          <div class="bx">
-            <div class="img">
-              <img src="img/trainer2.jpg" alt="img" />
-            </div>
-            <div class="txt">
-              <h5>mark vusi</h5>
-              <p>body builder</p>
-              <div class="social">
-                <i class="bx bxl-facebook"></i>
-                <i class="bx bxl-twitter"></i>
-                <i class="bx bxl-instagram"></i>
-              </div>
-            </div>
-          </div>
-
-          <!-- bx3 -->
-          <div class="bx">
-            <div class="img">
-              <img src="img/trainer3.jpg" alt="img" />
-            </div>
-            <div class="txt">
-              <h5>mark vusi</h5>
-              <p>body builder</p>
-              <div class="social">
-                <i class="bx bxl-facebook"></i>
-                <i class="bx bxl-twitter"></i>
-                <i class="bx bxl-instagram"></i>
-              </div>
-            </div>
-          </div>
-
-          <!-- bx4 -->
-          <div class="bx">
-            <div class="img">
-              <img src="img/trainer4.jpg" alt="img" />
-            </div>
-            <div class="txt">
-              <h5>mark vusi</h5>
-              <p>body builder</p>
-              <div class="social">
-                <i class="bx bxl-facebook"></i>
-                <i class="bx bxl-twitter"></i>
-                <i class="bx bxl-instagram"></i>
-              </div>
-            </div>
-          </div>
-
-          <!-- bx5 -->
-          <div class="bx">
-            <div class="img">
-              <img src="img/trainer5.jpg" alt="img" />
-            </div>
-            <div class="txt">
-              <h5>mark vusi</h5>
-              <p>body builder</p>
-              <div class="social">
-                <i class="bx bxl-facebook"></i>
-                <i class="bx bxl-twitter"></i>
-                <i class="bx bxl-instagram"></i>
-              </div>
-            </div>
-          </div>
-
-          <!-- bx6 -->
-          <div class="bx">
-            <div class="img">
-              <img src="img/trainer6.jpg" alt="img" />
-            </div>
-            <div class="txt">
-              <h5>mark vusi</h5>
-              <p>body builder</p>
-              <div class="social">
-                <i class="bx bxl-facebook"></i>
-                <i class="bx bxl-twitter"></i>
-                <i class="bx bxl-instagram"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- trainers section ends -->
-
-    <!-- plans section starts -->
-    <section id="plans">
-      <div class="plan_container container">
-        <h2>our <span>plans</span></h2>
-        <p class="subtitle">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repellat
-          alias adipisci, praesentium excepturi harum laudantium ducimus ipsa
-          molestiae repellendus. Iure facilis tenetur.
-        </p>
-        <div class="wrapper">
-          <!-- card1 -->
-          <div class="card">
-            <h4>$8/<span>month</span></h4>
-            <h5>basic plan</h5>
-            <p>cardic exercise</p>
-            <p>wieght lifting</p>
-            <p>diet plan</p>
-            <p>overall result</p>
-          </div>
-          <!-- card2 -->
-          <div class="card">
-            <h4>$15/<span>month</span></h4>
-            <h5>pro plan</h5>
-            <p>personal training</p>
-            <p>access to all course</p>
-            <p>cardic exercise</p>
-            <p>health check</p>
-            <p>diet plan</p>
-            <p>overall result</p>
-          </div>
-
-          <!-- card2 -->
-          <div class="card">
-            <h4>$10/<span>month</span></h4>
-            <h5>premium plan</h5>
-            <p>personal training</p>
-            <p>cardic exercise</p>
-            <p>health check</p>
-            <p>diet plan</p>
-            <p>overall result</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- plans section ends -->
-
-    <!-- sechedule section starts-->
-    <section id="schedules">
-      <div class="schedule_container container">
-        <h2>our exclusive <span>schedules</span></h2>
-        <p class="subtitle">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-          odit quasi sint, asperiores id corporis sapiente molestias architecto.
-        </p>
-        <div class="wrapper">
-          <div class="day_navi">
-            <p class="active">monday</p>
-            <p>tuesday</p>
-            <p>wednesday</p>
-            <p>thursday</p>
-            <p>friday</p>
-            <p>sarturday</p>
-            <p>sunday</p>
-          </div>
-
-          <div class="activities">
-            <!-- box 1 -->
-            <div class="bx">
-              <div class="col">
-                <span>class name</span>
-                <p>body building</p>
-              </div>
-
-              <div class="col">
-                <span>time</span>
-                <p>8:00am - 9:00am</p>
-              </div>
-
-              <div class="col">
-                <span>trainer</span>
-                <p>max mathew</p>
-              </div>
-
-              <div class="col">
-                <button>join now</button>
-              </div>
-            </div>
-
-            <!-- box 2-->
-            <div class="bx">
-              <div class="col">
-                <span>class name</span>
-                <p>body building</p>
-              </div>
-
-              <div class="col">
-                <span>time</span>
-                <p>8:00am - 9:00am</p>
-              </div>
-
-              <div class="col">
-                <span>trainer</span>
-                <p>max mathew</p>
-              </div>
-
-              <div class="col">
-                <button>join now</button>
-              </div>
-            </div>
-
-            <!-- box 3 -->
-            <div class="bx">
-              <div class="col">
-                <span>class name</span>
-                <p>body building</p>
-              </div>
-
-              <div class="col">
-                <span>time</span>
-                <p>8:00am - 9:00am</p>
-              </div>
-
-              <div class="col">
-                <span>trainer</span>
-                <p>max mathew</p>
-              </div>
-
-              <div class="col">
-                <button>join now</button>
-              </div>
-            </div>
-
-            <!-- box 4 -->
-            <div class="bx">
-              <div class="col">
-                <span>class name</span>
-                <p>body building</p>
-              </div>
-
-              <div class="col">
-                <span>time</span>
-                <p>8:00am - 9:00am</p>
-              </div>
-
-              <div class="col">
-                <span>trainer</span>
-                <p>max mathew</p>
-              </div>
-
-              <div class="col">
-                <button>join now</button>
-              </div>
-            </div>
-
-            <!-- box 5 -->
-            <div class="bx">
-              <div class="col">
-                <span>class name</span>
-                <p>body building</p>
-              </div>
-
-              <div class="col">
-                <span>time</span>
-                <p>8:00am - 9:00am</p>
-              </div>
-
-              <div class="col">
-                <span>trainer</span>
-                <p>max mathew</p>
-              </div>
-
-              <div class="col">
-                <button>join now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- sechedule section ends-->
-
-
-    <!-- contact page starts -->
-    <section id="contact">
-      <div class="contact_container container">
-        <h2>contact <span>us</span></h2>
-        <p class="subtitle">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui totam, perferendis impedit nes.
-
-        </p>
-        <div class="wrapper">
-          <div class="txt">
-            <div class="box">
-              <h5>location</h5>
-             <P>New york city, usa.
-             </br>
-              85 briton mint street, london,ELBLG,USA</P> 
-            </div>
-
-<div class="box">
-  <h5>opening hours</h5>
-  <p>Mon to Fri: 6:00Am - 8:00pm</p>
-  <p>Sartuday and Sunday: 7:00Am - 9:00pm</p>
-</div>
-
-<div class="box">
-  <h5>follow us on</h5>
-  <p>
-          <i class="bx bxl-facebook"></i>
-                <i class="bx bxl-twitter"></i>
-                <i class="bx bxl-instagram"></i>
-                <i class='bx bxl-youtube'></i>
-  </p>
-</div>
-
-
-          </div>
-
-          <div class="form">
-            <div class="bx">
-         <label for="name">name</label>
-            <input type="text" name="name" id="name">
-            </div>
-
-            <div class="bx">
-              <label for="email">email</label>
-              <input type="email" id="email">
-            </div>
-
-              <div class="bx">
-              <label for="phone_number">phone number</label>
-              <input type="number" id="phone_number">
-            </div>
-
-               <div class="bx">
-              <label for="message">message</label>
-             <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            </div>
-    <button>send</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- contact page ends -->
-
-    <!-- footer page starts -->
-    <footer>
-      <div class="footer_container container">
-        <div class="box">
-          <div class="logo">
-            <h1>gym <span>nasia</span></h1>
-          </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis magni ipsum modi incidunt maxime ex nam repellat sapiente! Nobis esse ut perspiciatis impedit, ab eum quia adipisci harum sit eligendi.</p>
-
-        </div>
-        <div class="box">
-          <h5>our classes</h5>
-          <p>weight lifting</p>
-          <p>yoga</p>
-          <p>personal training</p>
-          <p>body composition</p>
-          <p>cycling</p>
-          <p>spin cycling</p>
-        </div>
-
-        <div class="box">
-          <h5>quick links</h5>
-          <a href="#home">home</a>
-          <a href="#home">about us</a>
-          <a href="#home">courses</a>
-          <a href="#home">our trainers</a>
-          <a href="#home">plans</a>
-          <a href="#home">schedules</a>
-          <a href="#home">contact</a>
-        </div>
-
-        <div class="box">
-          <h5>newsletter</h5>
-          <p>suscribe to our news letter to get more update about us</p>
-          <div class="input" >
-            <input type="text" placeholder="EMAIL">
-            <button>subscribe</button>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- footer page ends -->
-   
-
-     <!-- verification form ends -->
-
-    <div class="overlay"> 
     </div>
-    <div class="verification_form login">
-<div class="main_wrap">
+  </footer>
+  <!-- footer page ends -->
+
+
+  <!-- verification form ends -->
+
+  <div class="overlay">
+  </div>
+  <div class="verification_form login">
+    <div class="main_wrap">
       <i class='bx bx-x remove_icon'></i>
       <!-- login form starts -->
       <div class="login_form wrapper">
-<h1>welcome back!</h1>
-<p>To keep connected with us please, login with your personnal info.</p>
-<div class="form">
-  <div class="input_con">
-      <div class="input">
-    <label for="username">username</label>
-    <input type="text" name="username" id="username">
-  </div>
-  <div class="input">
-    <label for="password">password</label>
-    <input type="password" name="passsword" id="password">
-  </div>
-  <div class="txt"><p>forgotten password?</p></div>
-  </div>
+        <h1>welcome back!</h1>
+        <p>To keep connected with us please, login with your personnal info.</p>
+        <div class="form">
+          <div class="input_con">
+            <div class="input">
+              <label for="username">username</label>
+              <input type="text" name="username" id="username">
+            </div>
+            <div class="input">
+              <label for="password">password</label>
+              <input type="password" name="passsword" id="password">
+            </div>
+            <div class="txt">
+              <p>forgotten password?</p>
+            </div>
+          </div>
 
-  <div class="btn">
-    <button>login</button>
-    <button>sign in</button>
-  </div>
-</div>
+          <div class="btn">
+            <button>login</button>
+            <button>sign in</button>
+          </div>
+        </div>
       </div>
       <!-- login form ends -->
 
@@ -666,20 +698,20 @@
         <p>Create your personnal account with us, to keep track of your progress.</p>
         <div class="form">
           <div class="input_con">
-              <div class="input">
-            <label for="name">name</label>
-            <input type="text">
+            <div class="input">
+              <label for="name">name</label>
+              <input type="text">
+            </div>
+            <div class="input">
+              <label for="email">email</label>
+              <input type="email" name="email" id="email">
+            </div>
+            <div class="input">
+              <label for="password">password</label>
+              <input type="password" name="passsword" id="passsword">
+            </div>
           </div>
-          <div class="input">
-            <label for="email">email</label>
-            <input type="email" name="email" id="email">
-          </div>
-          <div class="input">
-            <label for="password">password</label>
-            <input type="password" name="passsword" id="passsword">
-          </div>
-          </div>
-        
+
           <div class="btn">
             <button>sign in</button>
             <button>login</button>
@@ -688,13 +720,18 @@
       </div>
 
       <!-- sign in form ends -->
-</div>
-
-
-
     </div>
-    <!-- verification form ends -->
 
-    <script src="index.js"></script>
-  </body>
+
+
+  </div>
+  <!-- verification form ends -->
+
+  <!-- swiper link -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <script src="index.js"></script>
+</body>
+
 </html>
