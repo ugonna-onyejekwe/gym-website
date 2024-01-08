@@ -51,7 +51,7 @@ html {
 :root {
   --main_color: rgb(244, 87, 14);
   --txt-color: rgb(78, 75, 75);
-  --bg-2: rgb(250, 245, 245);
+  --bg-2: rgb(248, 235, 235);
   --bg-1: white;
 }
 .container {
@@ -836,146 +836,169 @@ footer {
   pointer-events: all;
 }
 
-.verification_form {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -300%);
+.verification_page {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.verification_page_wrapper {
   display: flex;
-  background: var(--bg-1);
-  box-shadow: 0 0 10px black;
-  width: 60%;
-  z-index: 130;
+  background: var(--bg-2);
+  box-shadow: 0 0 5px grey;
   border-radius: 10px;
   overflow: hidden;
-  transition: 0.4s linear;
+  margin-top: 100px;
 }
 
-.verification_form .main_wrap {
-  width: 100%;
-  height: fit-content;
-  display: flex;
+.verification_page_wrapper .form_wrapper {
+  width: 60%;
   position: relative;
 }
-.verification_form .remove_icon {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  padding: 10px;
-  font-size: 20px;
-  background: rgba(128, 128, 128, 0.193);
-  border-radius: 50%;
-  cursor: pointer;
+
+.verification_page_wrapper .form_wrapper form {
+  padding: 50px 100px;
 }
 
-.verification_form.active {
-  transform: translate(-50%, -50%);
-}
-
-.verification_form .wrapper {
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 0;
-}
-
-.verification_form .wrapper h1 {
-  text-align: center;
-  font-size: 30px;
+.verification_page_wrapper .form_wrapper form h1 {
   text-transform: capitalize;
-}
-
-.verification_form .wrapper p {
+  padding-bottom: 5px;
   text-align: center;
 }
 
-.verification_form .wrapper .form {
-  margin: 30px 0;
+.verification_page_wrapper .form_wrapper form p {
+  text-align: center;
+}
+
+.verification_page_wrapper .form_wrapper form .input_con {
+  margin-top: 30px;
+}
+
+.verification_page_wrapper .form_wrapper form .input_con .box {
+  margin-top: 10px;
+}
+
+.verification_page_wrapper .form_wrapper form .input_con label {
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+.verification_page_wrapper .form_wrapper form .input_con input {
   width: 100%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.verification_page_wrapper .form_wrapper form .btns {
+  margin-top: 20px;
   display: flex;
+  align-items: center;
   flex-direction: column;
-  gap: 10px;
   transition: 0.4s ease;
 }
 
-.verification_form .wrapper .form .input {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.verification_page_wrapper .form_wrapper form .btns p {
+  padding-top: 5px;
+  display: none;
 }
 
-.verification_form .wrapper .form .input label {
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-.verification_form .wrapper .form .input input {
-  padding: 10px;
-  border: 1px solid grey;
-  border-radius: 5px;
-}
-
-.verification_form .wrapper .form .txt {
-  width: 100%;
-}
-
-.verification_form .wrapper .form .txt p {
-  text-align: right;
+.verification_page_wrapper .form_wrapper form .btns p span:hover {
   opacity: 0.7;
-  transition: 0.4s;
   cursor: pointer;
 }
 
-.verification_form .wrapper .form .txt p:hover {
-  opacity: 1;
+.verification_page .login_wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: -110%;
+  transition: 0.4s ease;
 }
 
-.verification_form .wrapper .form .btn {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 20px;
+.verification_page .sign_up_wrapper {
+  position: relative;
+  transition: 0.4s ease;
 }
 
-.verification_form .wrapper .form .btn button:last-child {
-  display: none;
+.verification_page.login .login_wrapper {
+  left: 0;
 }
 
-.verification_form.signin .login_form {
-  box-shadow: 0 0 10px grey;
+.verification_page.login .sign_up_wrapper {
+  right: -110%;
+}
+.verification_page.sign_up .login_wrapper {
+  left: -110%;
+}
+
+.verification_page.sign_up .sign_up_wrapper {
+  right: 0;
+}
+
+.verification_page_wrapper .massage_wrapper {
   width: 40%;
-  transition: 0.5s ease;
+  background-image: url(img/weight-lifting.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
 }
 
-.verification_form.signin .login_form .form .input_con {
-  display: none;
-  pointer-events: none;
+.verification_page_wrapper .massage_wrapper .backdrop {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  z-index: 1;
+  opacity: 0.6;
 }
 
-.verification_form.signin .signin_form {
-  width: 60%;
-  transition: 0.5s ease;
-  padding: 20px 60px;
+.verification_page_wrapper .massage_wrapper .mass {
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 30px;
 }
 
-.verification_form.login .signin_form {
-  box-shadow: 0 0 10px grey;
-  width: 40%;
-  transition: 0.5s ease;
+.verification_page_wrapper .massage_wrapper .mass h1 {
+  color: white;
 }
 
-.verification_form.login .signin_form .form .input_con {
-  display: none;
-  pointer-events: none;
+.verification_page_wrapper .massage_wrapper .mass p {
+  color: rgba(255, 255, 255, 0.664);
+  padding: 20px 0;
+  font-weight: 400;
 }
 
-.verification_form.login .login_form {
-  width: 60%;
-  transition: 0.5s ease;
-  padding: 20px 60px;
+.verification_page_wrapper .massage_wrapper .mass button {
+  box-shadow: 0 0 3px black;
+}
+
+.verification_page .sign_up_massage {
+  position: relative;
+  transition: 0.4s ease;
+}
+.verification_page .login_massage {
+  position: relative;
+  transition: 0.4s ease;
+}
+
+.verification_page.login .login_massage {
+  left: -150%;
+}
+.verification_page.login .sign_up_massage {
+  right: 0;
+}
+.verification_page.sign_up .login_massage {
+  left: 0;
+}
+.verification_page.sign_up .sign_up_massage {
+  right: -150%;
 }
 
 @media (max-width: 1100px) {
@@ -1062,6 +1085,18 @@ footer {
   .footer_container {
     flex-wrap: wrap;
   }
+
+  .verification_page_wrapper .form_wrapper {
+    width: 100%;
+  }
+
+  .verification_page_wrapper .massage_wrapper {
+    display: none;
+  }
+
+  .verification_page_wrapper .form_wrapper form .btns p {
+    display: block;
+  }
 }
 
 @media (max-width: 870px) {
@@ -1072,6 +1107,7 @@ footer {
   .menu_btn {
     display: block;
     font-size: 30px;
+    cursor: pointer;
   }
   .menu_btn i:first-child {
     display: block;
@@ -1091,15 +1127,17 @@ footer {
 
   .nav_container .navigators {
     position: fixed;
-    width: 300px;
+    width: 60%;
+    height: 100vh;
     right: -110%;
-    top: 90px;
+    top: 78px;
     background: var(--bg-1);
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 10px 10px black;
     flex-direction: column;
-    padding: 30px 0;
+    padding: 30px 20px;
     transition: 0.4s ease;
     z-index: 100000;
+    background: var(--bg-2);
   }
 
   .nav_container .navigators.active {
@@ -1108,9 +1146,24 @@ footer {
 
   .nav_container .links {
     flex-direction: column;
+    align-items: unset;
+    justify-content: left;
+    width: 100%;
+    gap: 40px;
   }
   .nav_container .links a {
     font-size: 15px;
+    width: 100%;
+  }
+
+  .nav_container .links a::before {
+    content: "";
+    left: 10px;
+  }
+
+  .nav_container .btn {
+    width: 100%;
+    margin-top: 10px;
   }
 
   .about_container {
@@ -1147,61 +1200,24 @@ footer {
     flex-wrap: wrap;
     gap: 10px;
   }
-  .verification_form {
-    width: 60%;
-  }
-  .verification_form .wrapper .form .btn button:last-child {
-    display: block;
-  }
-
-  .verification_form.signin .login_form {
-    box-shadow: 0 0 10px grey;
-    display: none;
-    transition: 0.5s ease;
-  }
-
-  .verification_form.signin .login_form .form .input_con {
-    display: block;
-    pointer-events: all;
-  }
-
-  .verification_form.signin .signin_form {
-    width: 100%;
-    transition: 0.5s ease;
-    padding: 20px 60px;
-  }
-
-  .verification_form.login .signin_form {
-    box-shadow: 0 0 10px grey;
-
-    display: none;
-
-    transition: 0.5s ease;
-  }
-
-  .verification_form.login .signin_form .form .input_con {
-    display: block;
-    pointer-events: all;
-  }
-
-  .verification_form.login .login_form {
-    width: 100%;
-    transition: 0.5s ease;
-    padding: 20px 60px;
-  }
 }
 
 @media (max-width: 600px) {
-  .verification_form {
-    width: 70%;
-  }
-  .verification_form.signin .signin_form {
-    padding: 50px 20px 10px 20px;
+  .home_container .img_wrapper .swiper-wrapper .swiper-slide img {
+    width: fit-content;
   }
 
-  .verification_form.login .login_form {
-    padding: 50px 20px 10px 20px;
+  .nav_container .navigators {
+    width: 100%;
   }
+  .verification_page_wrapper .form_wrapper form {
+    padding: 50px 30px;
+  }
+
+  .verification_page_wrapper .form_wrapper form h1 {
+    font-size: 30px;
+  }
+
   .home_container {
     height: 100vh;
   }
@@ -1260,8 +1276,12 @@ footer {
   .container {
     width: 90%;
   }
-  .verification_form {
-    width: 90%;
+  .verification_page_wrapper .form_wrapper form {
+    padding: 50px 20px;
+  }
+
+  .verification_page_wrapper .form_wrapper form h1 {
+    font-size: 25px;
   }
   .container {
     width: 90%;
